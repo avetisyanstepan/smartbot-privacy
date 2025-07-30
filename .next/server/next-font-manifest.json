@@ -1,0 +1,13 @@
+{
+  "app": {
+    "[project]/src/app/page": [
+      "static/media/658a24e262c4f0a9-s.p.2b9b556b.woff2"
+    ],
+    "[project]/src/app/privacy-policy/page": [
+      "static/media/658a24e262c4f0a9-s.p.2b9b556b.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
