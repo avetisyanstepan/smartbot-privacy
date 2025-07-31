@@ -85,7 +85,7 @@ export default function SmartBotLanding() {
         <p className="text-md text-gray-400">Want a free trial? Get 3-day demo connection on your Page</p>
       </section>
 
-      <footer className="py-10 bg-gray-900 text-white text-center border-t border-gray-700">
+      <footer className="py-10 bg-gray-900  text-white text-center border-t border-gray-700">
         <p className="text-lg font-semibold">
           SmartBot — Your AI Assistant in Digital Communication
         </p>
@@ -94,9 +94,21 @@ export default function SmartBotLanding() {
         </p>
         <a 
           href="/privacy-policy" 
-          className="mt-4 inline-block text-sm text-purple-300 hover:text-purple-400 underline transition duration-200"
+          className="mt-4 mr-2 inline-block text-sm text-purple-300 hover:text-purple-400 underline transition duration-200"
         >
          Privacy Policy
+        </a>
+           <a 
+          href="/terms" 
+          className="mt-4 mr-2 inline-block text-sm text-purple-300 hover:text-purple-400 underline transition duration-200"
+        >
+         Terms
+        </a>
+           <a 
+          href="/deletion" 
+          className="mt-4 inline-block text-sm text-purple-300 hover:text-purple-400 underline transition duration-200"
+        >
+         Data deletion
         </a>
       </footer>
     </main>

@@ -20,15 +20,15 @@
       "static/chunks/_e69f0d32._.js",
       "static/chunks/_01f48b92._.js"
     ],
-    "/privacy-policy/page": [
+    "/terms/page": [
       "static/chunks/node_modules_next_dist_01fcdebf._.js",
       "static/chunks/src_app_favicon_ico_mjs_f9cadd25._.js",
       "static/chunks/[root-of-the-server]__aa468c05._.css",
       "static/chunks/src_app_layout_68b267f5.js",
       "static/chunks/node_modules_next_dist_client_components_builtin_global-error_445fc0e4.js",
-      "static/chunks/[root-of-the-server]__c5693ab5._.js",
+      "static/chunks/[root-of-the-server]__dc8613d0._.js",
       "static/chunks/[next]_internal_font_google_manrope_19d9787c_module_52aebf51.css",
-      "static/chunks/src_app_privacy-policy_page_445fc0e4.js",
+      "static/chunks/src_app_terms_page_445fc0e4.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_6aaa83c7._.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc06._.js",
       "static/chunks/node_modules_next_dist_compiled_next-devtools_index_d575f738.js",
