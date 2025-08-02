@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://smartbot.am
+
+# Sitemaps
 Sitemap: https://smartbot.am/sitemap.xml
