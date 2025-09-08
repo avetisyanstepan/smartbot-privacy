@@ -44,12 +44,100 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$inbox$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Inbox$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/inbox.js [app-client] (ecmascript) <export default as Inbox>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$git$2d$compare$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GitCompare$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/git-compare.js [app-client] (ecmascript) <export default as GitCompare>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-client] (ecmascript) <export default as CheckCircle2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-x.js [app-client] (ecmascript) <export default as XCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crown$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Crown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/crown.js [app-client] (ecmascript) <export default as Crown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar-check.js [app-client] (ecmascript) <export default as CalendarCheck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$list$2d$checks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ListChecks$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/list-checks.js [app-client] (ecmascript) <export default as ListChecks>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Timer$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/timer.js [app-client] (ecmascript) <export default as Timer>");
 'use client';
 ;
 ;
 ;
 ;
 function SmartBotLanding() {
+    const featureMatrix = [
+        {
+            key: 'pages',
+            label: 'Էջերի քանակ (FB/IG)',
+            values: [
+                '1',
+                '1',
+                '1',
+                '1'
+            ]
+        },
+        {
+            key: 'msgs',
+            label: 'Անվճար հաղորդագրություններ / ամիս',
+            values: [
+                '50',
+                '2 000',
+                '5 000',
+                'Պայմանագրով'
+            ]
+        },
+        {
+            key: 'templates',
+            label: 'Շաբլոնների քանակ',
+            values: [
+                'մինչև 5',
+                'մինչև 20',
+                'մինչև 80',
+                'անսահման'
+            ]
+        },
+        {
+            key: 'leads',
+            label: 'Լիդերի պահպանում CRM-ում',
+            values: [
+                '—',
+                '✓',
+                '✓',
+                '✓'
+            ]
+        },
+        {
+            key: 'ai',
+            label: 'AI պատասխաններ (GPT)',
+            values: [
+                '—',
+                '—',
+                '✓',
+                '✓'
+            ]
+        },
+        {
+            key: 'reports',
+            label: 'Վիճակագրություն / հաշվետվություններ',
+            values: [
+                '—',
+                'Հիմնական',
+                'Ընդլայնված',
+                'Ընդլայնված + custom'
+            ]
+        },
+        {
+            key: 'support',
+            label: 'Աջակցություն',
+            values: [
+                'էլ. փոստ',
+                'չատ',
+                'չատ + priоrity',
+                'SLA 24/7'
+            ]
+        },
+        {
+            key: 'whitelabel',
+            label: 'White‑label վահանակ',
+            values: [
+                '—',
+                '—',
+                '—',
+                '✓'
+            ]
+        }
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
         className: "min-h-screen bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e] text-white ".concat(__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$manrope_9cac0d9c$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].className),
         children: [
@@ -81,7 +169,7 @@ function SmartBotLanding() {
                         children: "🧠 SmartBot — Ձեր AI օգնականը Messenger-ում և Instagram-ում"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 16,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -101,7 +189,7 @@ function SmartBotLanding() {
                         children: "Ավտոմատ պատասխաններ 24/7, լիդերի պահպանում և AI-պատասխաններ՝ ձեր բիզնեսի համար։"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 29,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -113,7 +201,7 @@ function SmartBotLanding() {
                                 children: "Սկսել անվճար"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 38,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -122,19 +210,19 @@ function SmartBotLanding() {
                                 children: "Ստանալ demo"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 44,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 37,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 15,
+                lineNumber: 40,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -166,24 +254,24 @@ function SmartBotLanding() {
                                     children: item.icon
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                    lineNumber: 66,
+                                    lineNumber: 82,
                                     columnNumber: 15
                                 }, this),
                                 item.text
                             ]
                         }, idx, true, {
                             fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                            lineNumber: 62,
+                            lineNumber: 81,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                    lineNumber: 55,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 54,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -194,7 +282,7 @@ function SmartBotLanding() {
                         children: "📌 Ինչ է անում SmartBot-ը"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 75,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -205,7 +293,7 @@ function SmartBotLanding() {
                                     className: "inline w-5 h-5 mr-2 text-pink-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                    lineNumber: 81,
+                                    lineNumber: 94,
                                     columnNumber: 21
                                 }, this),
                                 text: 'Պատասխանում է մեսենջերի հաղորդագրություններին 24/7'
@@ -215,7 +303,7 @@ function SmartBotLanding() {
                                     className: "inline w-5 h-5 mr-2 text-indigo-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                    lineNumber: 85,
+                                    lineNumber: 95,
                                     columnNumber: 21
                                 }, this),
                                 text: 'Հասկանում է բարդ հարցերը GPT-ով'
@@ -225,7 +313,7 @@ function SmartBotLanding() {
                                     className: "inline w-5 h-5 mr-2 text-yellow-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                    lineNumber: 89,
+                                    lineNumber: 96,
                                     columnNumber: 21
                                 }, this),
                                 text: 'Պահպանում է հաճախորդների տվյալները (լիդեր)'
@@ -235,7 +323,7 @@ function SmartBotLanding() {
                                     className: "inline w-5 h-5 mr-2 text-green-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                    lineNumber: 93,
+                                    lineNumber: 97,
                                     columnNumber: 21
                                 }, this),
                                 text: 'Տալիս է ամսական PDF / Excel հաշվետվություն'
@@ -245,7 +333,7 @@ function SmartBotLanding() {
                                     className: "inline w-5 h-5 mr-2 text-purple-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                    lineNumber: 97,
+                                    lineNumber: 98,
                                     columnNumber: 21
                                 }, this),
                                 text: 'AI fallback և նոր հարցերի մշակումը'
@@ -255,7 +343,7 @@ function SmartBotLanding() {
                                     className: "inline w-5 h-5 mr-2 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                    lineNumber: 101,
+                                    lineNumber: 99,
                                     columnNumber: 21
                                 }, this),
                                 text: 'Աշխատում է Chatwoot-ի միջոցով՝ որպես վստահելի կամուրջ'
@@ -280,18 +368,75 @@ function SmartBotLanding() {
                                 ]
                             }, idx, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 105,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 78,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 74,
+                lineNumber: 90,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "px-6",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-5xl mx-auto bg-gradient-to-r from-purple-600/30 via-pink-500/20 to-indigo-500/20 border border-purple-400/30 rounded-2xl p-6 text-center",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col md:flex-row items-center justify-center gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-2 text-purple-200 text-lg font-semibold",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Timer$3e$__["Timer"], {
+                                        className: "w-5 h-5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 120,
+                                        columnNumber: 15
+                                    }, this),
+                                    "3-օրյա DEMO՝ առանց քարտի"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                lineNumber: 119,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-gray-300",
+                                children: "ստանում եք ռեալ հաշվետվություն՝ ներգրավվածության և պատասխանների մասին"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                lineNumber: 123,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "#connect",
+                                className: "bg-pink-600 hover:bg-pink-700 px-5 py-2 rounded-xl font-semibold",
+                                children: "Սկսել demo"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                lineNumber: 124,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                        lineNumber: 118,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                    lineNumber: 117,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                lineNumber: 116,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -302,7 +447,7 @@ function SmartBotLanding() {
                         children: "🔄 Համեմատություն"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 121,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -315,7 +460,7 @@ function SmartBotLanding() {
                                         className: "w-5 h-5 mb-1 text-red-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 124,
+                                        lineNumber: 134,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -323,43 +468,73 @@ function SmartBotLanding() {
                                         children: "Առանց SmartBot"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 125,
+                                        lineNumber: 135,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "list-disc list-inside space-y-1 text-gray-300",
+                                        className: "list-none space-y-1 text-gray-300",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "Ադմինը offline, ուշացած պատասխաններ"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                        className: "w-4 h-4 text-red-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 137,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Ադմինը offline, ուշացած պատասխաններ"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 127,
+                                                lineNumber: 137,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "Լիդերը հաճախ կորչում են"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                        className: "w-4 h-4 text-red-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 138,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Լիդերը հաճախ կորչում են"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 128,
+                                                lineNumber: 138,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "Չկա հաշվետվություն և վերլուծություն"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                        className: "w-4 h-4 text-red-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 139,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Չկա հաշվետվություն և վերլուծություն"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 129,
+                                                lineNumber: 139,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 126,
+                                        lineNumber: 136,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 123,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -369,7 +544,7 @@ function SmartBotLanding() {
                                         className: "w-5 h-5 mb-1 text-green-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 133,
+                                        lineNumber: 143,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -377,55 +552,85 @@ function SmartBotLanding() {
                                         children: "SmartBot-ով"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 134,
+                                        lineNumber: 144,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "list-disc list-inside space-y-1 text-gray-300",
+                                        className: "list-none space-y-1 text-gray-300",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "24/7 պատասխաններ՝ առանց ուշացման"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4 text-emerald-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 146,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "24/7 պատասխաններ՝ առանց ուշացման"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 136,
+                                                lineNumber: 146,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "Լիդերի ավտոմատ պահպանում CRM-ում"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4 text-emerald-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 147,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Լիդերի ավտոմատ պահպանում CRM-ում"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 137,
+                                                lineNumber: 147,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "Ամսական հաշվետվություններ և վիճակագրություն"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4 text-emerald-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 148,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Ամսական հաշվետվություններ և վիճակագրություն"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 138,
+                                                lineNumber: 148,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 135,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 132,
+                                lineNumber: 142,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 122,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 120,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -437,7 +642,7 @@ function SmartBotLanding() {
                         children: "💵 Սակագներ"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 146,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -448,28 +653,28 @@ function SmartBotLanding() {
                                 children: "միայն 1 էջի"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 150,
-                                columnNumber: 37
+                                lineNumber: 157,
+                                columnNumber: 81
                             }, this),
                             " համար (FB կամ IG)։"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 149,
+                        lineNumber: 157,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 md:grid-cols-4 gap-6 max-w-7xl mx-auto",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white/5 border border-white/10 rounded-2xl p-6",
+                                className: "relative bg-white/5 border border-white/10 rounded-2xl p-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold",
+                                        className: "text-2xl font-bold flex items-center gap-2",
                                         children: "Free"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 155,
+                                        lineNumber: 163,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -477,68 +682,118 @@ function SmartBotLanding() {
                                         children: "0 ֏ / ամսական"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 156,
+                                        lineNumber: 164,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "mt-4 space-y-2 text-sm text-gray-200",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• 1 էջ (FB/IG)"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 166,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "1 էջ (FB/IG)"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 158,
+                                                lineNumber: 166,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• 50 հաղորդագրություն / ամիս"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 167,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "50 հաղորդագրություն / ամիս"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 159,
+                                                lineNumber: 167,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Մինչև 5 շաբլոն"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 168,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Մինչև 5 շաբլոն"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 160,
+                                                lineNumber: 168,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Հիմնական ավտոպատասխաններ"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 169,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Հիմնական ավտոպատասխաններ"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 161,
+                                                lineNumber: 169,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Էլ. փոստով աջակցություն"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 170,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "AI պատասխաններ"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 162,
+                                                lineNumber: 170,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 157,
+                                        lineNumber: 165,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 154,
+                                lineNumber: 162,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white/10 border border-purple-500/30 rounded-2xl p-6 shadow-xl",
+                                className: "relative bg-white/10 border border-purple-500/30 rounded-2xl p-6 shadow-xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-2xl font-bold",
                                         children: "Start"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 168,
+                                        lineNumber: 176,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -546,71 +801,93 @@ function SmartBotLanding() {
                                         children: "25 000 ֏ / ամսական"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 169,
+                                        lineNumber: 177,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "mt-4 space-y-2 text-sm text-gray-200",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• 1 էջ (FB/IG)"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 179,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "1 էջ (FB/IG)"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 171,
+                                                lineNumber: 179,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• 2 000 հաղորդագրություն / ամիս"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 180,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "2 000 հաղորդագրություն / ամիս"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 172,
+                                                lineNumber: 180,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Մինչև 20 շաբլոն (FAQ)"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 181,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Մինչև 20 շաբլոն (FAQ)"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 173,
+                                                lineNumber: 181,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Լիդերի պահպանում"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 182,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Լիդերի պահպանում"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 174,
+                                                lineNumber: 182,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Աջակցություն չաթով"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 175,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 170,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 167,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white/5 border border-white/10 rounded-2xl p-6",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold",
-                                        children: [
-                                            "Pro",
-                                            ' ',
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "ml-2 bg-pink-500 text-white text-xs px-2 py-1 rounded",
-                                                children: "Ամենահանրաճանաչ"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 183,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "AI պատասխաններ"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
                                                 lineNumber: 183,
                                                 columnNumber: 15
@@ -618,133 +895,167 @@ function SmartBotLanding() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 181,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-2 text-gray-300",
-                                        children: "60 000 ֏ / ամսական"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 187,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "mt-4 space-y-2 text-sm text-gray-200",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• 1 էջ (FB/IG)"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 189,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• 5 000 հաղորդագրություն / ամիս"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 190,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Մինչև 80 շաբլոն"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 191,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Լիդերի պահպանում"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 192,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• AI-պատասխաններ (GPT)"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 193,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Ընդլայնված վիճակագրություն և հաշվետվություններ"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 194,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 188,
+                                        lineNumber: 178,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 180,
+                                lineNumber: 175,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white/5 border border-white/10 rounded-2xl p-6",
+                                className: "relative bg-white rounded-2xl p-6 text-gray-900 border-2 border-pink-500 shadow-2xl",
                                 children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute -top-3 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-pink-600 text-white text-xs px-3 py-1 rounded-full shadow",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crown$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Crown$3e$__["Crown"], {
+                                                className: "w-3.5 h-3.5"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                lineNumber: 190,
+                                                columnNumber: 15
+                                            }, this),
+                                            " Ամենահանրաճանաչ"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 189,
+                                        columnNumber: 13
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold",
-                                        children: "Individual"
+                                        className: "text-2xl font-extrabold",
+                                        children: "Pro"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 200,
+                                        lineNumber: 192,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-2 text-gray-300",
-                                        children: "Հատուկ առաջարկ"
+                                        className: "mt-2 text-gray-700 font-semibold",
+                                        children: "60 000 ֏ / ամսական"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 201,
+                                        lineNumber: 193,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "mt-4 space-y-2 text-sm text-gray-200",
+                                        className: "mt-4 space-y-2 text-sm text-gray-800",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• 1 էջ (FB/IG)"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 195,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "1 էջ (FB/IG)"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 203,
+                                                lineNumber: 195,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Անսահմանափակ շաբլոններ"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 196,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "5 000 հաղորդագրություն / ամիս"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 204,
+                                                lineNumber: 196,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• White-label վահանակ"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 197,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Մինչև 80 շաբլոն"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 205,
+                                                lineNumber: 197,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• Ինտեգրացիաներ խոշոր բիզնեսի համար"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 198,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Լիդերի պահպանում"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 206,
+                                                lineNumber: 198,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: "• SLA 24/7"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 199,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "AI-պատասխաններ (GPT)"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 207,
+                                                lineNumber: 199,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 200,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Ընդլայնված վիճակագրություն և հաշվետվություններ"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                lineNumber: 200,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 194,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "#connect",
+                                        className: "mt-5 inline-block bg-pink-600 hover:bg-pink-700 text-white rounded-xl px-5 py-2 font-semibold",
+                                        children: "Ընտրել Pro"
+                                    }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
                                         lineNumber: 202,
                                         columnNumber: 13
@@ -752,19 +1063,242 @@ function SmartBotLanding() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 199,
+                                lineNumber: 188,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative bg-white/5 border border-white/10 rounded-2xl p-6",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-2xl font-bold",
+                                        children: "Individual"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 207,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-2 text-gray-300",
+                                        children: "Հատուկ առաջարկ (պայմանագրով)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 208,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-3 text-sm text-gray-300",
+                                        children: "Պիտանի է բիզնեսների համար, ում պետք են որակյալ SLA, white‑label, բազմալիք ինտեգրացիաներ և անհատական կարգավորումներ։"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 209,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "mt-4 space-y-2 text-sm text-gray-200",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 212,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Անսահման շաբլոններ և custom հոսքեր"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                lineNumber: 212,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 213,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "White‑label վահանակ, մեկից ավելի թիմեր"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                lineNumber: 213,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 214,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "Խորը ինտեգրացիաներ (CRM/BI/փոստ/վճարումներ)"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                lineNumber: 214,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 215,
+                                                        columnNumber: 55
+                                                    }, this),
+                                                    "SLA 24/7 և օնբորդինգ"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                lineNumber: 215,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 211,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "#connect",
+                                        className: "mt-5 inline-block bg-purple-600 hover:bg-purple-700 rounded-xl px-5 py-2 font-semibold",
+                                        children: "Պահանջել առաջարկ"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 217,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                lineNumber: 206,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 152,
+                        lineNumber: 160,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-12 max-w-7xl mx-auto overflow-x-auto",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "min-w-[720px] rounded-2xl border border-white/10 bg-gray-900/40",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid grid-cols-5 text-sm",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "p-3 font-semibold text-gray-200",
+                                                children: "Ֆունկցիա"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                lineNumber: 225,
+                                                columnNumber: 15
+                                            }, this),
+                                            [
+                                                'Free',
+                                                'Start',
+                                                'Pro',
+                                                'Individual'
+                                            ].map((p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "p-3 font-semibold text-center ".concat(p === 'Pro' ? 'text-pink-300' : 'text-gray-200'),
+                                                    children: p
+                                                }, p, false, {
+                                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                    lineNumber: 227,
+                                                    columnNumber: 17
+                                                }, this))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 224,
+                                        columnNumber: 13
+                                    }, this),
+                                    featureMatrix.map((row, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid grid-cols-5 items-center ".concat(idx % 2 === 0 ? 'bg-white/5' : 'bg-transparent'),
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "p-3 text-gray-200",
+                                                    children: row.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                    lineNumber: 232,
+                                                    columnNumber: 17
+                                                }, this),
+                                                row.values.map((val, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "p-3 text-center",
+                                                        children: [
+                                                            val === '✓' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                                className: "w-5 h-5 inline"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                                lineNumber: 235,
+                                                                columnNumber: 37
+                                                            }, this),
+                                                            val === '—' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                                                                className: "w-5 h-5 inline"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                                lineNumber: 236,
+                                                                columnNumber: 37
+                                                            }, this),
+                                                            val !== '✓' && val !== '—' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-gray-300",
+                                                                children: val
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                                lineNumber: 237,
+                                                                columnNumber: 52
+                                                            }, this)
+                                                        ]
+                                                    }, i, true, {
+                                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                                        lineNumber: 234,
+                                                        columnNumber: 19
+                                                    }, this))
+                                            ]
+                                        }, row.key, true, {
+                                            fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                            lineNumber: 231,
+                                            columnNumber: 15
+                                        }, this))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                lineNumber: 223,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mt-3 text-xs text-gray-400",
+                                children: "* Գները նշված են առանց հարկերի։ GPT-ի ծախսերը կարող են տարբեր լինել՝ ըստ օգտագործման ծավալի։"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                lineNumber: 243,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                        lineNumber: 222,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 145,
+                lineNumber: 155,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -775,7 +1309,7 @@ function SmartBotLanding() {
                         children: "🛒 Էլ․ առևտրի հավելում"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 215,
+                        lineNumber: 249,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -783,21 +1317,161 @@ function SmartBotLanding() {
                         children: "Խոշոր կատալոգների համար՝ ավտոմատ շաբլոնների գեներացիա (CSV/Excel/ինտեգրացիա), գների/պաշարների թարմացում իրական ժամանակում։ Շաբլոնների սահմանափակում՝ չկա։ Գործում է նույն 1 էջի համար։"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 218,
+                        lineNumber: 250,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "mt-3 text-center text-gray-200",
-                        children: "💵 +20 000–40 000 ֏ / ամիս (կախված ծավալից)"
+                        children: "💵 +20 000–40 000 ֏ / ամիս (կախված ծավալից)"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 222,
+                        lineNumber: 251,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 214,
+                lineNumber: 248,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-16 px-6 md:px-24",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "text-3xl font-semibold text-center text-purple-200 mb-2",
+                        children: "🗓️ SmartBot Reservation (հավելյալ մոդուլ)"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                        lineNumber: 256,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-center text-gray-300 mb-6",
+                        children: "Արագ ամրագրումներ սրահների, սպա-կենտրոնների, ռեստորանների, սրահների և ծառայությունների համար։ Աշխատում է նույն էջի վրա՝ որպես հոսք:"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                        lineNumber: 257,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto",
+                        children: [
+                            {
+                                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarCheck$3e$__["CalendarCheck"], {
+                                    className: "w-5 h-5"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                    lineNumber: 260,
+                                    columnNumber: 21
+                                }, this),
+                                title: 'Ժամացույց և timeslots',
+                                desc: 'Ամրագրում ըստ ժամանակացույցի, արձակուրդների/չաշխ. օրերի կառավարում'
+                            },
+                            {
+                                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$list$2d$checks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ListChecks$3e$__["ListChecks"], {
+                                    className: "w-5 h-5"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                    lineNumber: 261,
+                                    columnNumber: 21
+                                }, this),
+                                title: 'Հարցաշար և տվյալներ',
+                                desc: 'Անուն/հեռ./ծառայություն, ավտոթոքենիզացիա՝ կրկնակի այցերի համար'
+                            },
+                            {
+                                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                    className: "w-5 h-5"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                    lineNumber: 262,
+                                    columnNumber: 21
+                                }, this),
+                                title: 'AI օգնական',
+                                desc: 'Պատասխանում է հաճախորդի «արագ հարցերին»՝ մինչև ամրագրումը'
+                            },
+                            {
+                                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                    className: "w-5 h-5"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                    lineNumber: 263,
+                                    columnNumber: 21
+                                }, this),
+                                title: 'Հաշվետվություն',
+                                desc: 'Ամսական Excel/PDF ամփոփում՝ ամրագրումների վիճակագրությամբ'
+                            }
+                        ].map((param, i)=>{
+                            let { icon, title, desc } = param;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-white/5 border border-white/10 rounded-2xl p-5",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-2 text-purple-200 font-semibold mb-1",
+                                        children: [
+                                            icon,
+                                            title
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 266,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-gray-300 text-sm",
+                                        children: desc
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                        lineNumber: 267,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, i, true, {
+                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                lineNumber: 265,
+                                columnNumber: 13
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                        lineNumber: 258,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center mt-6",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-xl px-4 py-2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-gray-200",
+                                    children: "💵 Արժեքը՝"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                    lineNumber: 273,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "font-semibold",
+                                    children: "+10 000 ֏ / ամիս"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                    lineNumber: 274,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                            lineNumber: 272,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                        lineNumber: 271,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                lineNumber: 255,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -809,7 +1483,7 @@ function SmartBotLanding() {
                         children: "🔌 Ինչպես միացնել"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 229,
+                        lineNumber: 281,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -822,7 +1496,7 @@ function SmartBotLanding() {
                                         children: "Ուղարկեք ձեր էջի հղումը (FB կամ IG):"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 234,
+                                        lineNumber: 284,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -832,54 +1506,54 @@ function SmartBotLanding() {
                                                 children: "Page Access: Full Control (Admin)"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                                lineNumber: 236,
+                                                lineNumber: 286,
                                                 columnNumber: 20
                                             }, this),
                                             " կամ Partner Access՝ որպեսզի կարողանանք հրապարակել բոթի անունից, միացնել ինտեգրացիաները և ստանալ անհրաժեշտ իրադարձությունները։"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 235,
+                                        lineNumber: 285,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "Մենք կապում ենք SmartBot-ը ձեր էջին և կատարում Chatwoot/CRM կարգավորումները։"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 239,
+                                        lineNumber: 289,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "Ստանում եք 3-օրյա demo հաշվետվություն և առաջարկ՝ ըստ արդյունքի։"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 240,
+                                        lineNumber: 290,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 233,
+                                lineNumber: 283,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sm text-gray-400",
-                                children: "* Բոլոր հասանելիությունները կառավարելի են ձեր կողմից, կարող եք ցանկացած պահին սահմանափակել/հանել։ Աշխատում ենք 2FA-ով և պահպանում ենք միայն անհրաժեշտ իրավասությունները։"
+                                children: "* Բոլոր հասանելիությունները կառավարելի են ձեր կողմից, կարող եք ցանկացած պահի սահմանափակել/հանել։ Աշխատում ենք 2FA-ով և պահպանում ենք միայն անհրաժեշտ իրավասությունները։"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 242,
+                                lineNumber: 292,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 232,
+                        lineNumber: 282,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 228,
+                lineNumber: 280,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -890,7 +1564,7 @@ function SmartBotLanding() {
                         children: "❓ Հաճախ տրվող հարցեր"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 250,
+                        lineNumber: 298,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -903,20 +1577,20 @@ function SmartBotLanding() {
                                         children: "Ինչ իրավունք է պետք տալ?"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 255,
+                                        lineNumber: 301,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Պետք է տալ Page Access: Full Control (Admin) կամ Partner Access, որպեսզի բոթը կարողանա աշխատել պաշտոնական API-ով և միացվեն ինտեգրացիաները (Chatwoot/CRM):"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 256,
+                                        lineNumber: 302,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 254,
+                                lineNumber: 300,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -926,20 +1600,20 @@ function SmartBotLanding() {
                                         children: "Անվտա՞նգ է արդյոք:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 262,
+                                        lineNumber: 305,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Այո, մենք օգտագործում ենք Meta-ի պաշտոնական մեխանիզմները, բոլոր գործողությունները լոգավորվում են, և հասանելիությունները կարող եք ցանկացած պահի դադարեցնել:"
+                                        children: "Այո, օգտագործում ենք Meta-ի պաշտոնական մեխանիզմները, բոլոր գործողությունները լոգավորվում են, և հասանելիությունները կարող եք ցանկացած պահի դադարեցնել:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 263,
+                                        lineNumber: 306,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 261,
+                                lineNumber: 304,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -949,20 +1623,20 @@ function SmartBotLanding() {
                                         children: "Ինչի՞ համար է պետք Chatwoot-ը:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 269,
+                                        lineNumber: 309,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Chatwoot-ը բաց կոդով հաղորդակցման հարթակ է, որը ծառայում է որպես վստահելի կամուրջ․ ձեր բոլոր հաղորդագրությունները պահվում են անվտանգ CRM-ում, իսկ SmartBot-ը աշխատում է որպես AI շերտ՝ ավտոմատացնելով պատասխանները:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 270,
+                                        lineNumber: 310,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 268,
+                                lineNumber: 308,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -972,32 +1646,32 @@ function SmartBotLanding() {
                                         children: "Կարո՞ղ եմ փորձել նախ demo-ով:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 275,
+                                        lineNumber: 313,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Այո, տրամադրում ենք 3-օրյա անվճար demo՝ նույն օրը միացման հնարավորությամբ:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                        lineNumber: 276,
+                                        lineNumber: 314,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 274,
+                                lineNumber: 312,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 253,
+                        lineNumber: 299,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 249,
+                lineNumber: 297,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1008,7 +1682,7 @@ function SmartBotLanding() {
                         children: "📲 Սկսե՞նք"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 285,
+                        lineNumber: 321,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1016,7 +1690,7 @@ function SmartBotLanding() {
                         children: "SmartBot-ը կաշխատի ձեր էջում ընդամենը 1 րոպեում։"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 286,
+                        lineNumber: 322,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1028,7 +1702,7 @@ function SmartBotLanding() {
                                 children: "Սկսել հիմա"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 290,
+                                lineNumber: 324,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1037,19 +1711,19 @@ function SmartBotLanding() {
                                 children: "Ստանալ demo"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 296,
+                                lineNumber: 325,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 289,
+                        lineNumber: 323,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 284,
+                lineNumber: 320,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -1060,7 +1734,7 @@ function SmartBotLanding() {
                         children: "SmartBot — Ձեր AI օգնականը թվային հաղորդակցման մեջ"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 307,
+                        lineNumber: 331,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1068,7 +1742,7 @@ function SmartBotLanding() {
                         children: "📞 +374 99 27 81 81 | 📧 smartbotarm@gmail.com | 📱 @SmartBot_Armenia"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 310,
+                        lineNumber: 332,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1080,7 +1754,7 @@ function SmartBotLanding() {
                                 children: "Privacy Policy"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 314,
+                                lineNumber: 334,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1089,7 +1763,7 @@ function SmartBotLanding() {
                                 children: "Terms of Service"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 320,
+                                lineNumber: 335,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1098,13 +1772,13 @@ function SmartBotLanding() {
                                 children: "Data Deletion"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 323,
+                                lineNumber: 336,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 313,
+                        lineNumber: 333,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1119,25 +1793,25 @@ function SmartBotLanding() {
                                 children: "Chatwoot"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 332,
+                                lineNumber: 340,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 330,
+                        lineNumber: 338,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 306,
+                lineNumber: 330,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-        lineNumber: 11,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }
