@@ -17,6 +17,7 @@ import {
   ListChecks,
   Timer
 } from 'lucide-react';
+import Link from 'next/link';
 
 const manrope = Manrope({ subsets: ['latin'], weight: ['400', '600', '700'] });
 
@@ -60,13 +61,20 @@ export default function SmartBotLanding() {
           Ավտոմատ պատասխաններ 24/7, լիդերի պահպանում և AI-պատասխաններ՝ ձեր բիզնեսի համար։
         </motion.p>
         <div className="mt-6 flex items-center justify-center gap-4">
-          <a href="#pricing" className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold">
-            Սկսել անվճար
-          </a>
-          <a href="#connect" className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-xl font-semibold">
-            Ստանալ demo
-          </a>
-        </div>
+      <Link
+        href={{ pathname: "/request-access", query: { variant: "free" } }}
+        className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold"
+      >
+        Սկսել անվճար
+      </Link>
+
+      <Link
+        href={{ pathname: "/request-access", query: { variant: "demo" } }}
+        className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-xl font-semibold"
+      >
+        Ստանալ demo
+      </Link>
+    </div>
       </section>
 
       {/* VALUE PROPS */}
