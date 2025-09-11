@@ -1,11 +1,5 @@
 {
   "app": {
-    "[project]/src/app/_not-found/page": [
-      "static/media/658a24e262c4f0a9-s.p.2b9b556b.woff2"
-    ],
-    "[project]/src/app/client-settings/page": [
-      "static/media/658a24e262c4f0a9-s.p.2b9b556b.woff2"
-    ],
     "[project]/src/app/page": [
       "static/media/658a24e262c4f0a9-s.p.2b9b556b.woff2"
     ],

@@ -128,41 +128,6 @@ export default function SmartBotConnect() {
                 <label className={label} htmlFor="description">Կարճ նկարագրություն</label>
                 <textarea id="description" className={input} rows={3} name="description" value={form.description} onChange={onChange} placeholder="Ինչ եք վաճառում / ինչ ծառայություն է" />
               </div>
-
-              {/* Թեմաներ */}
-              <div>
-                <div className="flex items-center justify-between">
-                  <label className={label}>Թեմաներ՝ որոնց վրա բոտը կարող է պատասխանել</label>
-                  <span className="text-xs text-white/60">{selectedCount} / {presets.length}</span>
-                </div>
-                <div className="mt-3 grid grid-cols-2 md:grid-cols-3 gap-3 text-white/90">
-                  {presets.map((t) => (
-                    <label key={t} className="flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 hover:bg-white/5 transition">
-                      <input
-                        type="checkbox"
-                        className="accent-pink-500 w-4 h-4"
-                        value={t}
-                        checked={form.allowedTopics.includes(t)}
-                        onChange={(e) => onToggleTopic(t, e.target.checked)}
-                      />
-                      <span className="text-sm">{t}</span>
-                    </label>
-                  ))}
-                </div>
-                <input
-                  className={`${input} mt-2`}
-                  name="allowedTopicsCustom"
-                  placeholder="Այլ թեմաներ…"
-                  value={form.allowedTopicsCustom}
-                  onChange={onChange}
-                />
-              </div>
-
-              <div>
-                <label className={label} htmlFor="forbiddenTopics">Թեմաներ, որոնց վրա չպետք է պատասխանել</label>
-                <textarea id="forbiddenTopics" className={input} rows={2} name="forbiddenTopics" placeholder="Օրինակ՝ քաղաքականություն, բժշկություն, ֆինանսներ…" value={form.forbiddenTopics} onChange={onChange} />
-              </div>
-
               {/* Լեզու */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -179,12 +144,6 @@ export default function SmartBotConnect() {
               {/* FB + контакты */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className={label} htmlFor="facebookPageUrl">ՁԵՐ Facebook Page-ի հղումը (էջի իրական URL)</label>
-                  <input id="facebookPageUrl" className={input} type="url" name="facebookPageUrl" placeholder="օր․ https://facebook.com/MyBusinessPage կամ https://facebook.com/profile.php?id=…" value={form.facebookPageUrl} onChange={onChange} />
-                  <p className="mt-1 text-xs text-white/60">Գրեք հենց ձեր բիզնես էջի հղումը, ոչ թե SmartBot‑ի էջը։</p>
-                  {errors.facebookPageUrl && <p className="mt-1 text-xs text-red-300">{errors.facebookPageUrl}</p>}
-                </div>
-                <div>
                   <label className={label} htmlFor="businessManagerId">ՁԵՐ Business Manager ID (եթե ունեք)</label>
                   <input id="businessManagerId" className={input} name="businessManagerId" placeholder="օր․ 123456789012345" value={form.businessManagerId} onChange={onChange} />
                   <p className="mt-1 text-xs text-white/60">Որտեղ գտնել՝ Business settings → Business info → Business Manager ID։ Կարող եք թողնել դատարկ, եթե դեռ չունեք։</p>
@@ -192,7 +151,7 @@ export default function SmartBotConnect() {
               </div>
 
               <div>
-                <label className={label} htmlFor="contactPhone">Հեռախոս / WhatsApp</label>
+                <label className={label} htmlFor="contactPhone">Հեռախոս</label>
                 <input id="contactPhone" className={input} name="contactPhone" value={form.contactPhone} onChange={onChange} />
               </div>
 
@@ -200,14 +159,6 @@ export default function SmartBotConnect() {
                 <label className={label} htmlFor="extraNotes">Լրացուցիչ նշումներ</label>
                 <textarea id="extraNotes" className={input} rows={3} name="extraNotes" value={form.extraNotes} onChange={onChange} />
               </div>
-
-              <div className="flex flex-wrap gap-3 pt-2">
-                <button type="submit" disabled={loading} className={`${btn} bg-pink-600 hover:bg-pink-700 text-white ${loading ? "opacity-70" : ""}`}>
-                  {loading ? "Ուղարկվում է…" : "Ուղարկել հայտ"}
-                </button>
-                <a href="#pricing" className={`${btn} bg-purple-600 hover:bg-purple-700 text-white`}>Դիտել սակագները</a>
-              </div>
-
               {submitted && (
                 <div className="mt-4 flex items-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-200">
                   Հայտը ստացվել է։ Մենք կկապվենք email-ով շուտով։
