@@ -25,6 +25,7 @@ export default function SmartBotConnect() {
     fbAccountLink: "",
     contactPhone: "",
     extraNotes: "",
+    plan: "",
   });
 
   const presets = ["ապրանքներ", "գները", "ակցիաներ", "աշխ. ժամերը", "ծառայություններ"];
@@ -42,6 +43,7 @@ export default function SmartBotConnect() {
     const next = {};
     if (!form.companyName.trim()) next.companyName = "Մուտքագրեք ընկերության անվանումը";
     if (!form.businessType) next.businessType = "Ընտրեք տեսակը";
+    if (!form.plan) next.plan = "Ընտրեք սակագինը";
     const isHttp = (s) => s && (s.startsWith("http://") || s.startsWith("https://"));
     if (!isHttp(form.facebookPageUrl)) next.facebookPageUrl = "Թույլատրելի հղում (https://...)";
     if (!form.language) next.language = "Ընտրեք լեզուն";
