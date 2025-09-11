@@ -111,21 +111,6 @@ export default function SmartBotLanding() {
           ))}
         </div>
       </section>
-
-      {/* DEMO BANNER */}
-      <section className="px-6">
-        <div className="max-w-5xl mx-auto bg-gradient-to-r from-purple-600/30 via-pink-500/20 to-indigo-500/20 border border-purple-400/30 rounded-2xl p-6 text-center">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <div className="flex items-center gap-2 text-purple-200 text-lg font-semibold">
-              <Timer className="w-5 h-5" />
-              3-օրյա DEMO՝ առանց քարտի
-            </div>
-            <div className="text-gray-300">ստանում եք ռեալ հաշվետվություն՝ ներգրավվածության և պատասխանների մասին</div>
-            <a href="#connect" className="bg-pink-600 hover:bg-pink-700 px-5 py-2 rounded-xl font-semibold">Սկսել demo</a>
-          </div>
-        </div>
-      </section>
-
       {/* COMPARISON (old) */}
       <section className="py-12 px-6 md:px-16 bg-white/5 border-y border-white/10">
         <h2 className="text-2xl font-semibold text-center text-purple-200 mb-6">🔄 Համեմատություն</h2>
@@ -199,7 +184,6 @@ export default function SmartBotLanding() {
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>AI-պատասխաններ (GPT)</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>Ընդլայնված վիճակագրություն և հաշվետվություններ</li>
             </ul>
-            <a href="#connect" className="mt-5 inline-block bg-pink-600 hover:bg-pink-700 text-white rounded-xl px-5 py-2 font-semibold">Ընտրել Pro</a>
           </div>
 
           {/* Individual – rewritten */}
@@ -214,7 +198,6 @@ export default function SmartBotLanding() {
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>Խորը ինտեգրացիաներ (CRM/BI/փոստ/վճարումներ)</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>SLA 24/7 և օնբորդինգ</li>
             </ul>
-            <a href="#connect" className="mt-5 inline-block bg-purple-600 hover:bg-purple-700 rounded-xl px-5 py-2 font-semibold">Պահանջել առաջարկ</a>
           </div>
         </div>
 
