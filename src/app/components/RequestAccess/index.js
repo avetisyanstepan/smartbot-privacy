@@ -128,6 +128,23 @@ export default function SmartBotConnect() {
                 <label className={label} htmlFor="description">Կարճ նկարագրություն</label>
                 <textarea id="description" className={input} rows={3} name="description" value={form.description} onChange={onChange} placeholder="Ինչ եք վաճառում / ինչ ծառայություն է" />
               </div>
+              <div>
+  <label className={label} htmlFor="plan">Ընտրեք սակագին</label>
+  <select
+    id="plan"
+    className={input}
+    name="plan"
+    value={form.plan}
+    onChange={onChange}
+    required
+  >
+    <option value="">Ընտրեք</option>
+    <option value="free">Free / Demo</option>
+    <option value="start">Start</option>
+    <option value="pro">Pro (ամենահայտնի)</option>
+    <option value="pro_plus">Pro Plus</option>
+  </select>
+</div>
               {/* Լեզու */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -159,6 +176,13 @@ export default function SmartBotConnect() {
                 <label className={label} htmlFor="extraNotes">Լրացուցիչ նշումներ</label>
                 <textarea id="extraNotes" className={input} rows={3} name="extraNotes" value={form.extraNotes} onChange={onChange} />
               </div>
+
+              <div className="flex flex-wrap gap-3 pt-2">
+                <button type="submit" disabled={loading} className={`${btn} bg-pink-600 hover:bg-pink-700 text-white ${loading ? "opacity-70" : ""}`}>
+                  {loading ? "Ուղարկվում է…" : "Ուղարկել հայտ"}
+                </button>
+              </div>
+
               {submitted && (
                 <div className="mt-4 flex items-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-200">
                   Հայտը ստացվել է։ Մենք կկապվենք email-ով շուտով։

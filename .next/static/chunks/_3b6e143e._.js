@@ -341,6 +341,77 @@ function SmartBotConnect() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                    className: label,
+                                                    htmlFor: "plan",
+                                                    children: "Ընտրեք սակագին"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                                    lineNumber: 132,
+                                                    columnNumber: 3
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                    id: "plan",
+                                                    className: input,
+                                                    name: "plan",
+                                                    value: form.plan,
+                                                    onChange: onChange,
+                                                    required: true,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "",
+                                                            children: "Ընտրեք"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                                            lineNumber: 141,
+                                                            columnNumber: 5
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "free",
+                                                            children: "Free / Demo"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                                            lineNumber: 142,
+                                                            columnNumber: 5
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "start",
+                                                            children: "Start"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                                            lineNumber: 143,
+                                                            columnNumber: 5
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "pro",
+                                                            children: "Pro (ամենահայտնի)"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                                            lineNumber: 144,
+                                                            columnNumber: 5
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "pro_plus",
+                                                            children: "Pro Plus"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                                            lineNumber: 145,
+                                                            columnNumber: 5
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                                    lineNumber: 133,
+                                                    columnNumber: 3
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                            lineNumber: 131,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "grid md:grid-cols-2 gap-4",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
@@ -349,7 +420,7 @@ function SmartBotConnect() {
                                                         children: "Լեզու"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 134,
+                                                        lineNumber: 151,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -363,7 +434,7 @@ function SmartBotConnect() {
                                                                 children: "Հայերեն"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 136,
+                                                                lineNumber: 153,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -371,7 +442,7 @@ function SmartBotConnect() {
                                                                 children: "Русский"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 137,
+                                                                lineNumber: 154,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -379,13 +450,13 @@ function SmartBotConnect() {
                                                                 children: "English"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 138,
+                                                                lineNumber: 155,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 135,
+                                                        lineNumber: 152,
                                                         columnNumber: 19
                                                     }, this),
                                                     errors.language && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -393,18 +464,18 @@ function SmartBotConnect() {
                                                         children: errors.language
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 140,
+                                                        lineNumber: 157,
                                                         columnNumber: 39
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                lineNumber: 133,
+                                                lineNumber: 150,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                            lineNumber: 132,
+                                            lineNumber: 149,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -417,7 +488,7 @@ function SmartBotConnect() {
                                                         children: "ՁԵՐ Business Manager ID (եթե ունեք)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 147,
+                                                        lineNumber: 164,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -429,7 +500,7 @@ function SmartBotConnect() {
                                                         onChange: onChange
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 148,
+                                                        lineNumber: 165,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -437,18 +508,18 @@ function SmartBotConnect() {
                                                         children: "Որտեղ գտնել՝ Business settings → Business info → Business Manager ID։ Կարող եք թողնել դատարկ, եթե դեռ չունեք։"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 149,
+                                                        lineNumber: 166,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                lineNumber: 146,
+                                                lineNumber: 163,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                            lineNumber: 145,
+                                            lineNumber: 162,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -459,7 +530,7 @@ function SmartBotConnect() {
                                                     children: "Հեռախոս"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                    lineNumber: 154,
+                                                    lineNumber: 171,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -470,13 +541,13 @@ function SmartBotConnect() {
                                                     onChange: onChange
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                    lineNumber: 155,
+                                                    lineNumber: 172,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                            lineNumber: 153,
+                                            lineNumber: 170,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -487,7 +558,7 @@ function SmartBotConnect() {
                                                     children: "Լրացուցիչ նշումներ"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                    lineNumber: 159,
+                                                    lineNumber: 176,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -499,13 +570,30 @@ function SmartBotConnect() {
                                                     onChange: onChange
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                    lineNumber: 160,
+                                                    lineNumber: 177,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                            lineNumber: 158,
+                                            lineNumber: 175,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex flex-wrap gap-3 pt-2",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                type: "submit",
+                                                disabled: loading,
+                                                className: "".concat(btn, " bg-pink-600 hover:bg-pink-700 text-white ").concat(loading ? "opacity-70" : ""),
+                                                children: loading ? "Ուղարկվում է…" : "Ուղարկել հայտ"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                                lineNumber: 181,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/components/RequestAccess/index.js",
+                                            lineNumber: 180,
                                             columnNumber: 15
                                         }, this),
                                         submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -513,7 +601,7 @@ function SmartBotConnect() {
                                             children: "Հայտը ստացվել է։ Մենք կկապվենք email-ով շուտով։"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                            lineNumber: 163,
+                                            lineNumber: 187,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -538,7 +626,7 @@ function SmartBotConnect() {
                                                 children: "New Pages Experience"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                lineNumber: 173,
+                                                lineNumber: 197,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
@@ -551,7 +639,7 @@ function SmartBotConnect() {
                                                                 children: "Professional dashboard"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 175,
+                                                                lineNumber: 199,
                                                                 columnNumber: 28
                                                             }, this),
                                                             " → ",
@@ -559,13 +647,13 @@ function SmartBotConnect() {
                                                                 children: "Page access"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 175,
+                                                                lineNumber: 199,
                                                                 columnNumber: 60
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 175,
+                                                        lineNumber: 199,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -574,7 +662,7 @@ function SmartBotConnect() {
                                                                 children: "Add New"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 176,
+                                                                lineNumber: 200,
                                                                 columnNumber: 21
                                                             }, this),
                                                             " → ",
@@ -582,13 +670,13 @@ function SmartBotConnect() {
                                                                 children: "Add a business"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 176,
+                                                                lineNumber: 200,
                                                                 columnNumber: 38
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 176,
+                                                        lineNumber: 200,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -598,13 +686,13 @@ function SmartBotConnect() {
                                                                 children: "Business Manager ID"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 177,
+                                                                lineNumber: 201,
                                                                 columnNumber: 30
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 177,
+                                                        lineNumber: 201,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -614,26 +702,26 @@ function SmartBotConnect() {
                                                                 children: "Full control (Admin)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 178,
+                                                                lineNumber: 202,
                                                                 columnNumber: 28
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 178,
+                                                        lineNumber: 202,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         children: "Հաստատեք հրավերը"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 179,
+                                                        lineNumber: 203,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                lineNumber: 174,
+                                                lineNumber: 198,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -643,13 +731,13 @@ function SmartBotConnect() {
                                                 children: "Տալ Admin Access (New Pages)"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                lineNumber: 181,
+                                                lineNumber: 205,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                        lineNumber: 172,
+                                        lineNumber: 196,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -660,7 +748,7 @@ function SmartBotConnect() {
                                                 children: "Classic Page Roles"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                lineNumber: 187,
+                                                lineNumber: 211,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
@@ -672,7 +760,7 @@ function SmartBotConnect() {
                                                                 children: "Page Settings"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 189,
+                                                                lineNumber: 213,
                                                                 columnNumber: 21
                                                             }, this),
                                                             " → ",
@@ -680,13 +768,13 @@ function SmartBotConnect() {
                                                                 children: "Page roles"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 189,
+                                                                lineNumber: 213,
                                                                 columnNumber: 44
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 189,
+                                                        lineNumber: 213,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -694,19 +782,19 @@ function SmartBotConnect() {
                                                             children: "Assign a new Page role"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                            lineNumber: 190,
+                                                            lineNumber: 214,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 190,
+                                                        lineNumber: 214,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         children: "Մուտքագրեք FB account կամ տվեք access Business Manager-ին"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 191,
+                                                        lineNumber: 215,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -716,7 +804,7 @@ function SmartBotConnect() {
                                                                 children: "Admin"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 192,
+                                                                lineNumber: 216,
                                                                 columnNumber: 28
                                                             }, this),
                                                             " → ",
@@ -724,26 +812,26 @@ function SmartBotConnect() {
                                                                 children: "Add"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                                lineNumber: 192,
+                                                                lineNumber: 216,
                                                                 columnNumber: 43
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 192,
+                                                        lineNumber: 216,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                         children: "Հաստատեք հրավերը"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                        lineNumber: 193,
+                                                        lineNumber: 217,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                lineNumber: 188,
+                                                lineNumber: 212,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -753,19 +841,19 @@ function SmartBotConnect() {
                                                 children: "Տալ Admin Access (Classic)"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                                lineNumber: 195,
+                                                lineNumber: 219,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                        lineNumber: 186,
+                                        lineNumber: 210,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/RequestAccess/index.js",
-                                lineNumber: 171,
+                                lineNumber: 195,
                                 columnNumber: 11
                             }, this)
                         ]

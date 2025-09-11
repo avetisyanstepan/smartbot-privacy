@@ -832,10 +832,6 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -850,10 +846,6 @@
 
   .items-start {
     align-items: flex-start;
-  }
-
-  .justify-between {
-    justify-content: space-between;
   }
 
   .justify-center {
@@ -1611,10 +1603,6 @@
     }
   }
 
-  .accent-pink-500 {
-    accent-color: var(--color-pink-500);
-  }
-
   .opacity-70 {
     opacity: .7;
   }
@@ -1681,18 +1669,6 @@
   @media (hover: hover) {
     .hover\:bg-purple-700:hover {
       background-color: var(--color-purple-700);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-white\/5:hover {
-      background-color: rgba(255, 255, 255, .05);
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-white\/5:hover {
-        background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
-      }
     }
   }
 
