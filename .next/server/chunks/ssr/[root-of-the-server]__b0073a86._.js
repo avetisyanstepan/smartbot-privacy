@@ -155,7 +155,7 @@ function SmartBotConnect() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid lg:grid-cols-3 gap-6 items-start",
+                    className: "grid lg:grid-cols-1 gap-6 items-start",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: `${card} lg:col-span-2 p-6`,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -347,7 +347,7 @@ function SmartBotConnect() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/RequestAccess/index.js",
                                             lineNumber: 151,
-                                            columnNumber: 3
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                             id: "plan",
@@ -363,7 +363,7 @@ function SmartBotConnect() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
                                                     lineNumber: 160,
-                                                    columnNumber: 5
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                     value: "free",
@@ -371,7 +371,7 @@ function SmartBotConnect() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
                                                     lineNumber: 161,
-                                                    columnNumber: 5
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                     value: "start",
@@ -379,7 +379,7 @@ function SmartBotConnect() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
                                                     lineNumber: 162,
-                                                    columnNumber: 5
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                     value: "pro",
@@ -387,7 +387,7 @@ function SmartBotConnect() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
                                                     lineNumber: 163,
-                                                    columnNumber: 5
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                     value: "pro_plus",
@@ -395,13 +395,13 @@ function SmartBotConnect() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/RequestAccess/index.js",
                                                     lineNumber: 164,
-                                                    columnNumber: 5
+                                                    columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/RequestAccess/index.js",
                                             lineNumber: 152,
-                                            columnNumber: 3
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {

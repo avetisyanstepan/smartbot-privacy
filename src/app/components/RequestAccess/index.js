@@ -111,7 +111,7 @@ const onSubmit = async (e) => {
           </p>
         </header>
 
-        <div className="grid lg:grid-cols-3 gap-6 items-start">
+        <div className="grid lg:grid-cols-1 gap-6 items-start">
           {/* Форма */}
           <div className={`${card} lg:col-span-2 p-6`}>
             <form onSubmit={onSubmit} className="space-y-6 text-white">
@@ -148,22 +148,22 @@ const onSubmit = async (e) => {
                 <textarea id="description" className={input} rows={3} name="description" value={form.description} onChange={onChange} placeholder="Ինչ եք վաճառում / ինչ ծառայություն է" />
               </div>
               <div>
-  <label className={label} htmlFor="plan">Ընտրեք սակագին</label>
-  <select
-    id="plan"
-    className={input}
-    name="plan"
-    value={form.plan}
-    onChange={onChange}
-    required
-  >
-    <option value="">Ընտրեք</option>
-    <option value="free">Free / Demo</option>
-    <option value="start">Start</option>
-    <option value="pro">Pro (ամենահայտնի)</option>
-    <option value="pro_plus">Pro Plus</option>
-  </select>
-</div>
+                <label className={label} htmlFor="plan">Ընտրեք սակագին</label>
+                <select
+                  id="plan"
+                  className={input}
+                  name="plan"
+                  value={form.plan}
+                  onChange={onChange}
+                  required
+                >
+                  <option value="">Ընտրեք</option>
+                  <option value="free">Free / Demo</option>
+                  <option value="start">Start</option>
+                  <option value="pro">Pro (ամենահայտնի)</option>
+                  <option value="pro_plus">Pro Plus</option>
+                </select>
+              </div>
               {/* Լեզու */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
