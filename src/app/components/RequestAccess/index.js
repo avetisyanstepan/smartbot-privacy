@@ -211,7 +211,7 @@ const onSubmit = async (e) => {
           </div>
 
           {/* Инструкции */}
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <div className={`${card} p-6 text-white`}>
               <h3 className="text-xl font-semibold mb-3">New Pages Experience</h3>
               <ol className="list-decimal list-inside space-y-2 text-white/80">
@@ -225,7 +225,7 @@ const onSubmit = async (e) => {
                 Տալ Admin Access (New Pages)
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

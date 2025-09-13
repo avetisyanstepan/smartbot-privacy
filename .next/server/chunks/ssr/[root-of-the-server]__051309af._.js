@@ -273,7 +273,7 @@ function SmartBotLanding() {
                     children: [
                         {
                             icon: '⏱',
-                            text: 'Պատասխանում է < 1 րոպեում'
+                            text: 'Հաճախորդը չի սպասում — ստանում է պատասխան անմիջապես'
                         },
                         {
                             icon: '📈',
@@ -281,7 +281,7 @@ function SmartBotLanding() {
                         },
                         {
                             icon: '💸',
-                            text: 'Ավելի էժան, քան ադմինի 1 օրվա աշխատավարձը'
+                            text: 'Ձեր բիզնեսը խնայում է տասնյակ հազարավոր դրամներ ամեն ամիս'
                         },
                         {
                             icon: '🌐',
@@ -782,7 +782,7 @@ function SmartBotLanding() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "mt-2 text-gray-300",
-                                        children: "25 000 ֏ / ամսական"
+                                        children: "13 900֏ / ամսական"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
                                         lineNumber: 170,
@@ -918,7 +918,7 @@ function SmartBotLanding() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "mt-2 text-gray-700 font-semibold",
-                                        children: "60 000 ֏ / ամսական"
+                                        children: "25 900 ֏ / ամսական"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
                                         lineNumber: 186,
@@ -1062,7 +1062,7 @@ function SmartBotLanding() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "mt-3 text-sm text-gray-300",
-                                        children: "Պիտանի է բիզնեսների համար, ում պետք են որակյալ SLA, white‑label, բազմալիք ինտեգրացիաներ և անհատական կարգավորումներ։"
+                                        children: "Պիտանի է բիզնեսների համար, ում պետք են որակյալ SLA, white‑label և անհատական կարգավորումներ։"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
                                         lineNumber: 201,
@@ -1081,7 +1081,7 @@ function SmartBotLanding() {
                                                         lineNumber: 204,
                                                         columnNumber: 55
                                                     }, this),
-                                                    "Անսահման շաբլոններ և custom հոսքեր"
+                                                    "Անսահման շաբլոններ"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
@@ -1098,7 +1098,7 @@ function SmartBotLanding() {
                                                         lineNumber: 205,
                                                         columnNumber: 55
                                                     }, this),
-                                                    "White‑label վահանակ, մեկից ավելի թիմեր"
+                                                    "White‑label վահանակ"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
@@ -1115,7 +1115,7 @@ function SmartBotLanding() {
                                                         lineNumber: 206,
                                                         columnNumber: 55
                                                     }, this),
-                                                    "Խորը ինտեգրացիաներ (CRM/BI/փոստ/վճարումներ)"
+                                                    "Խորը ինտեգրացիաներ (CRM/BIր)"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
@@ -1648,37 +1648,46 @@ function SmartBotLanding() {
                         lineNumber: 312,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg text-gray-300 mb-2",
-                        children: "SmartBot-ը կաշխատի ձեր էջում ընդամենը 1 րոպեում։"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 313,
-                        columnNumber: 9
-                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-4 flex items-center justify-center gap-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "#pricing",
-                                className: "bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold",
-                                children: "Սկսել հիմա"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 315,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "#connect",
-                                className: "bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-xl font-semibold",
-                                children: "Ստանալ demo"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 316,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-6 flex items-center justify-center gap-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: {
+                                        pathname: "/request-access",
+                                        query: {
+                                            variant: "free"
+                                        }
+                                    },
+                                    className: "bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold",
+                                    children: "Սկսել անվճար"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                    lineNumber: 316,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: {
+                                        pathname: "/request-access",
+                                        query: {
+                                            variant: "demo"
+                                        }
+                                    },
+                                    className: "bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-xl font-semibold",
+                                    children: "Ստանալ demo"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                                    lineNumber: 323,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/components/SmartBotLanding/index.js",
+                            lineNumber: 315,
+                            columnNumber: 15
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
                         lineNumber: 314,
                         columnNumber: 9
@@ -1697,51 +1706,15 @@ function SmartBotLanding() {
                         children: "SmartBot — Ձեր AI օգնականը թվային հաղորդակցման մեջ"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 322,
+                        lineNumber: 335,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "mt-2 text-sm text-gray-400",
-                        children: "📞 +374 99 27 81 81 | 📧 smartbotarm@gmail.com | 📱 @SmartBot_Armenia"
+                        children: "📞 +374 99 27 81 81 | 📧 support@smartbot.am"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 323,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-4 space-x-4 text-sm",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "/privacy-policy",
-                                className: "text-purple-300 hover:text-purple-400 underline",
-                                children: "Privacy Policy"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 325,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "/terms",
-                                className: "text-purple-300 hover:text-purple-400 underline",
-                                children: "Terms of Service"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 326,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "/data-deletion",
-                                className: "text-purple-300 hover:text-purple-400 underline",
-                                children: "Data Deletion"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 327,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 324,
+                        lineNumber: 336,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1756,19 +1729,19 @@ function SmartBotLanding() {
                                 children: "Chatwoot"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                                lineNumber: 331,
+                                lineNumber: 344,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                        lineNumber: 329,
+                        lineNumber: 342,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/SmartBotLanding/index.js",
-                lineNumber: 321,
+                lineNumber: 334,
                 columnNumber: 7
             }, this)
         ]

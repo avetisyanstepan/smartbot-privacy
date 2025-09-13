@@ -81,9 +81,9 @@ export default function SmartBotLanding() {
       <section className="py-12 px-6 bg-white/5 border-y border-white/10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto text-center">
           {[
-            { icon: '⏱', text: 'Պատասխանում է < 1 րոպեում' },
+            { icon: '⏱', text: 'Հաճախորդը չի սպասում — ստանում է պատասխան անմիջապես' },
             { icon: '📈', text: 'Լիդերի աճ մինչև +30%' },
-            { icon: '💸', text: 'Ավելի էժան, քան ադմինի 1 օրվա աշխատավարձը' },
+            { icon: '💸', text: 'Ձեր բիզնեսը խնայում է տասնյակ հազարավոր դրամներ ամեն ամիս' },
             { icon: '🌐', text: 'Հայերեն / Ռուսերեն / Անգլերեն' },
           ].map((item, idx) => (
             <div key={idx} className="bg-white/5 rounded-xl p-6 text-purple-200 text-lg font-medium">
@@ -167,7 +167,7 @@ export default function SmartBotLanding() {
           {/* Start */}
           <div className="relative bg-white/10 border border-purple-500/30 rounded-2xl p-6 shadow-xl">
             <h3 className="text-2xl font-bold">Start</h3>
-            <p className="mt-2 text-gray-300">25 000 ֏ / ամսական</p>
+            <p className="mt-2 text-gray-300">13 900֏ / ամսական</p>
             <ul className="mt-4 space-y-2 text-sm text-gray-200">
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>1 էջ (FB/IG)</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>2 000 հաղորդագրություն / ամիս</li>
@@ -183,7 +183,7 @@ export default function SmartBotLanding() {
               <Crown className="w-3.5 h-3.5" /> Ամենահանրաճանաչ
             </div>
             <h3 className="text-2xl font-extrabold">Pro</h3>
-            <p className="mt-2 text-gray-700 font-semibold">60 000 ֏ / ամսական</p>
+            <p className="mt-2 text-gray-700 font-semibold">25 900 ֏ / ամսական</p>
             <ul className="mt-4 space-y-2 text-sm text-gray-800">
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>1 էջ (FB/IG)</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>5 000 հաղորդագրություն / ամիս</li>
@@ -198,12 +198,12 @@ export default function SmartBotLanding() {
           <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6">
             <h3 className="text-2xl font-bold">Individual</h3>
             <p className="mt-2 text-gray-300">Հատուկ առաջարկ (պայմանագրով)</p>
-            <p className="mt-3 text-sm text-gray-300">Պիտանի է բիզնեսների համար, ում պետք են որակյալ SLA, white‑label, բազմալիք ինտեգրացիաներ և անհատական կարգավորումներ։
+            <p className="mt-3 text-sm text-gray-300">Պիտանի է բիզնեսների համար, ում պետք են որակյալ SLA, white‑label և անհատական կարգավորումներ։
             </p>
             <ul className="mt-4 space-y-2 text-sm text-gray-200">
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>Անսահման շաբլոններ և custom հոսքեր</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>White‑label վահանակ, մեկից ավելի թիմեր</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>Խորը ինտեգրացիաներ (CRM/BI/փոստ/վճարումներ)</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>Անսահման շաբլոններ</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>White‑label վահանակ</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>Խորը ինտեգրացիաներ (CRM/BIր)</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4"/>SLA 24/7 և օնբորդինգ</li>
             </ul>
           </div>
@@ -310,22 +310,35 @@ export default function SmartBotLanding() {
       {/* CTA */}
       <section className="py-16 px-6 bg-black text-center">
         <h2 className="text-3xl font-semibold mb-6 text-purple-200">📲 Սկսե՞նք</h2>
-        <p className="text-lg text-gray-300 mb-2">SmartBot-ը կաշխատի ձեր էջում ընդամենը 1 րոպեում։</p>
+        {/* <p className="text-lg text-gray-300 mb-2">SmartBot-ը կաշխատի ձեր էջում ընդամենը 1 րոպեում։</p> */}
         <div className="mt-4 flex items-center justify-center gap-4">
-          <a href="#pricing" className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold">Սկսել հիմա</a>
-          <a href="#connect" className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-xl font-semibold">Ստանալ demo</a>
+              <div className="mt-6 flex items-center justify-center gap-4">
+      <Link
+        href={{ pathname: "/request-access", query: { variant: "free" } }}
+        className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold"
+      >
+        Սկսել անվճար
+      </Link>
+
+      <Link
+        href={{ pathname: "/request-access", query: { variant: "demo" } }}
+        className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-xl font-semibold"
+      >
+        Ստանալ demo
+      </Link>
+    </div>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className="py-10 bg-gray-900 text-white text-center border-t border-gray-700">
         <p className="text-lg font-semibold">SmartBot — Ձեր AI օգնականը թվային հաղորդակցման մեջ</p>
-        <p className="mt-2 text-sm text-gray-400">📞 +374 99 27 81 81 | 📧 smartbotarm@gmail.com | 📱 @SmartBot_Armenia</p>
-        <div className="mt-4 space-x-4 text-sm">
+        <p className="mt-2 text-sm text-gray-400">📞 +374 99 27 81 81 | 📧 support@smartbot.am</p>
+        {/* <div className="mt-4 space-x-4 text-sm">
           <a href="/privacy-policy" className="text-purple-300 hover:text-purple-400 underline">Privacy Policy</a>
           <a href="/terms" className="text-purple-300 hover:text-purple-400 underline">Terms of Service</a>
           <a href="/data-deletion" className="text-purple-300 hover:text-purple-400 underline">Data Deletion</a>
-        </div>
+        </div> */}
         <div className="mt-6 text-xs text-gray-500">
           Powered by{' '}
           <a href="https://www.chatwoot.com" target="_blank" className="underline hover:text-purple-300">Chatwoot</a>
