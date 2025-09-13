@@ -53,21 +53,45 @@ export default function SmartBotConnect() {
 
   const selectedCount = useMemo(() => form.allowedTopics.length, [form.allowedTopics]);
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    if (!validate()) return;
-    setLoading(true);
-    try {
-      // TODO: подключите свой backend
-      // await fetch("/api/client-settings", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
-      await new Promise((r) => setTimeout(r, 700));
-      setSubmitted(true);
-    } catch (err) {
-      setErrors((p) => ({ ...p, _root: "Չհաջողվեց ուղարկել. փորձեք կրկին" }));
-    } finally {
-      setLoading(false);
+const onSubmit = async (e) => {
+  e.preventDefault();
+  if (!validate()) return;
+
+  setLoading(true);
+  setErrors({});
+  try {
+    const res = await fetch("http://localhost:5000/api/intake", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include", // если нужен cookie/сессия
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json().catch(() => ({}));
+
+    // серверная валидация
+    if (!res.ok || !data.ok) {
+      // если пришли field-ошибки
+      if (data?.errors && typeof data.errors === "object") {
+        setErrors((p) => ({ ...p, ...data.errors, _root: "Սխալ տվյալներ. ստուգեք դաշտերը" }));
+      } else {
+        setErrors((p) => ({ ...p, _root: data?.error || "Server error" }));
+      }
+      return;
     }
-  };
+
+    // успех
+    setSubmitted(true);
+    // по желанию: очистить форму после успеха
+    // setForm({ ...form, companyName:"", businessType:"", description:"", allowedTopics:[], allowedTopicsCustom:"", forbiddenTopics:"", tone:"formal", language:"hy", facebookPageUrl:"", businessManagerId:"", fbAccountLink:"", contactPhone:"", extraNotes:"", plan:"" });
+    // можно сохранить id заявки: data.id
+  } catch (err) {
+    setErrors((p) => ({ ...p, _root: "Չհաջողվեց ուղարկել. փորձեք կրկին" }));
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   // UI классы
   const card = "bg-black/40 border border-white/10 rounded-2xl shadow-lg";
@@ -76,21 +100,14 @@ export default function SmartBotConnect() {
   const btn = "inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition";
 
   return (
-    <section className="relative py-16 md:py-24">
-      {/* Декор фона */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/3 -left-1/4 h-[600px] w-[600px] rounded-full bg-gradient-to-br from-fuchsia-600/20 via-pink-500/10 to-rose-500/10 blur-3xl" />
-        <div className="absolute -bottom-1/3 -right-1/4 h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-violet-600/20 via-purple-500/10 to-sky-500/10 blur-3xl" />
-      </div>
-
+    <section className="relative ">
       <div className="relative z-10 max-w-6xl mx-auto px-4">
         <header className="mb-10 text-center">
-          <span className="inline-block text-xs uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/10 text-white/80">Meta‑ready</span>
           <h1 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
             Ավելացրու քո էջը SmartBot-ում
           </h1>
-          <p className="mt-3 text-white/70 max-w-2xl mx-auto">
-            Լրացրեք ձևը՝ որպեսզի ակտիվացնենք ձեր Messenger/Instagram ավտոպատասխանները և KPI-ներով հաշվետվությունները։
+          <p className="mt-3 text-neutral-500 max-w-2xl mx-auto">
+            Լրացրեք ձևը՝ որպեսզի ակտիվացնենք ձեր Messenger/Instagram ավտոպատասխանները։
           </p>
         </header>
 
@@ -108,7 +125,7 @@ export default function SmartBotConnect() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className={label} htmlFor="companyName">Ընկերության անվանում</label>
-                  <input id="companyName" className={input} name="companyName" value={form.companyName} onChange={onChange} placeholder="BAC Group" />
+                  <input id="companyName" className={input} name="companyName" value={form.companyName} onChange={onChange} placeholder="SmartBot" />
                   {errors.companyName && <p className="mt-1 text-xs text-red-300">{errors.companyName}</p>}
                 </div>
                 <div>
@@ -163,9 +180,9 @@ export default function SmartBotConnect() {
               {/* FB + контакты */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className={label} htmlFor="businessManagerId">ՁԵՐ Business Manager ID (եթե ունեք)</label>
-                  <input id="businessManagerId" className={input} name="businessManagerId" placeholder="օր․ 123456789012345" value={form.businessManagerId} onChange={onChange} />
-                  <p className="mt-1 text-xs text-white/60">Որտեղ գտնել՝ Business settings → Business info → Business Manager ID։ Կարող եք թողնել դատարկ, եթե դեռ չունեք։</p>
+                  <label className={label} htmlFor="facebookPageUrl">Ձեր Facebook էջի-ի հղումը</label>
+                  <input id="facebookPageUrl" className={input} type="url" name="facebookPageUrl" placeholder="օր․ https://facebook.com/MyBusiness" value={form.facebookPageUrl} onChange={onChange} />
+                  {errors.facebookPageUrl && <p className="mt-1 text-xs text-red-300">{errors.facebookPageUrl}</p>}
                 </div>
               </div>
 
@@ -206,20 +223,6 @@ export default function SmartBotConnect() {
               </ol>
               <a target="_blank" href="https://www.facebook.com/settings/?tab=profile_access" className={`${btn} mt-4 bg-blue-600 hover:bg-blue-700 text-white`}>
                 Տալ Admin Access (New Pages)
-              </a>
-            </div>
-
-            <div className={`${card} p-6 text-white`}>
-              <h3 className="text-xl font-semibold mb-3">Classic Page Roles</h3>
-              <ol className="list-decimal list-inside space-y-2 text-white/80">
-                <li><b>Page Settings</b> → <b>Page roles</b></li>
-                <li><b>Assign a new Page role</b></li>
-                <li>Մուտքագրեք FB account կամ տվեք access Business Manager-ին</li>
-                <li>Ընտրեք <b>Admin</b> → <b>Add</b></li>
-                <li>Հաստատեք հրավերը</li>
-              </ol>
-              <a target="_blank" href="https://www.facebook.com/settings?tab=admin_roles" className={`${btn} mt-4 bg-blue-600 hover:bg-blue-700 text-white`}>
-                Տալ Admin Access (Classic)
               </a>
             </div>
           </div>
