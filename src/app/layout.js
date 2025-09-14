@@ -16,14 +16,16 @@ export default function RootLayout({ children }) {
     <html lang="hy">
       <head>
         {/* GA4 */}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4REZ50WN7N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4REZ50WN7N');
-</script>
+   <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-4REZ50WN7N`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}', { debug_mode: true });
+        `}</Script>
 
         {/* Твой JSON-LD */}
         <script
