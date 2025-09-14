@@ -1,11 +1,13 @@
-import './globals.css'
-import { Manrope } from 'next/font/google'
-import { metadata as seoMetadata } from './components/seo'
+// app/layout.tsx (или .js)
+import './globals.css';
+import { Manrope } from 'next/font/google';
+import { metadata as seoMetadata } from './components/seo';
+import Script from 'next/script';
 
 const manrope = Manrope({
   subsets: ['latin'],
   weight: ['400', '600', '700'],
-})
+});
 
 export const metadata = seoMetadata;
 
@@ -13,14 +15,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="hy">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4REZ50WN7N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        {/* GA4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4REZ50W7JN"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4REZ50W7JN', {
+              // отправлять page_view автоматически
+              send_page_view: true
+            });
+          `}
+        </Script>
 
-  gtag('config', 'G-4REZ50WN7N');
-</script>
+        {/* Твой JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -49,5 +61,5 @@ export default function RootLayout({ children }) {
         {children}
       </body>
     </html>
-  )
+  );
 }
