@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${GA_ID}', { debug_mode: true });
+          gtag('config', 'G-4REZ50WN7N', { debug_mode: true });
         `}</Script>
 
         {/* Твой JSON-LD */}
