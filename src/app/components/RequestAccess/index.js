@@ -1,15 +1,16 @@
 "use client";
 
-import { useMemo, useState } from "react";
-
-/**
- * SmartBotConnect — чистый JSX (без TypeScript и внешних UI-библиотек)
- * Next.js + Tailwind. Аккуратные подсказки, фиксы опечаток.
- */
-export default function SmartBotConnect() {
+import { useMemo, useRef, useState, useEffect } from "react";
+import { mp, track } from "@/app/lib/mixpanel";
+export default function RequestAccess({ variant = "free" }) {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState({});
+
+  // init mixpanel один раз
+  useEffect(() => { mp(); }, []);
+  // специальное событие открытия формы (не дублирует Page View)
+  useEffect(() => { track("Request Access Open", { variant }); }, [variant]);
 
   const [form, setForm] = useState({
     companyName: "",
@@ -25,7 +26,8 @@ export default function SmartBotConnect() {
     fbAccountLink: "",
     contactPhone: "",
     extraNotes: "",
-    plan: "",
+    plan: "",        // пользователь выберет из селекта
+    _variant: variant, // для аналитики
   });
 
   const presets = ["ապրանքներ", "գները", "ակցիաներ", "աշխ. ժամերը", "ծառայություններ"];
@@ -53,45 +55,69 @@ export default function SmartBotConnect() {
 
   const selectedCount = useMemo(() => form.allowedTopics.length, [form.allowedTopics]);
 
-const onSubmit = async (e) => {
-  e.preventDefault();
-  if (!validate()) return;
-
-  setLoading(true);
-  setErrors({});
-  try {
-    const res = await fetch("http://localhost:5000/api/intake", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include", // если нужен cookie/сессия
-      body: JSON.stringify(form),
-    });
-
-    const data = await res.json().catch(() => ({}));
-
-    // серверная валидация
-    if (!res.ok || !data.ok) {
-      // если пришли field-ошибки
-      if (data?.errors && typeof data.errors === "object") {
-        setErrors((p) => ({ ...p, ...data.errors, _root: "Սխալ տվյալներ. ստուգեք դաշտերը" }));
-      } else {
-        setErrors((p) => ({ ...p, _root: data?.error || "Server error" }));
+  // Чтобы отправить событие "Form Start" только один раз
+  const startedRef = useRef(false);
+  useEffect(() => {
+    const handler = () => {
+      if (!startedRef.current) {
+        track("Request Form Start", { variant });
+        startedRef.current = true;
       }
+    };
+    window.addEventListener("input", handler, { once: true });
+    return () => window.removeEventListener("input", handler);
+  }, [variant]);
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    if (!validate()) {
+      track("Request Submit Failed", { reason: "validation", variant });
       return;
     }
 
-    // успех
-    setSubmitted(true);
-    // по желанию: очистить форму после успеха
-    // setForm({ ...form, companyName:"", businessType:"", description:"", allowedTopics:[], allowedTopicsCustom:"", forbiddenTopics:"", tone:"formal", language:"hy", facebookPageUrl:"", businessManagerId:"", fbAccountLink:"", contactPhone:"", extraNotes:"", plan:"" });
-    // можно сохранить id заявки: data.id
-  } catch (err) {
-    setErrors((p) => ({ ...p, _root: "Չհաջողվեց ուղարկել. փորձեք կրկին" }));
-  } finally {
-    setLoading(false);
-  }
-};
+    setLoading(true);
+    setErrors({});
+    try {
+      const res = await fetch("/api/intake", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify(form),
+      });
 
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok || !data.ok) {
+        if (data?.errors && typeof data.errors === "object") {
+          setErrors((p) => ({ ...p, ...data.errors, _root: "Սխալ տվյալներ. ստուգեք դաշտերը" }));
+          track("Request Submit Failed", { reason: "server_fields", variant });
+        } else {
+          setErrors((p) => ({ ...p, _root: data?.error || "Server error" }));
+          track("Request Submit Failed", { reason: data?.error || "server_error", variant });
+        }
+        return;
+      }
+
+      // успех
+      setSubmitted(true);
+      track("Request Submitted", {
+        variant,
+        plan: form.plan,
+        businessType: form.businessType,
+        language: form.language,
+        topics_count: selectedCount,
+        has_bm_id: Boolean(form.businessManagerId),
+      });
+
+      // по желанию можно очистить форму:
+      // setForm((p) => ({ ...p, companyName:"", businessType:"", ... }));
+    } catch (err) {
+      setErrors((p) => ({ ...p, _root: "Չհաջողվեց ուղարկել. փորձեք կրկին" }));
+      track("Request Submit Failed", { reason: "network", variant });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   // UI классы
   const card = "bg-black/40 border border-white/10 rounded-2xl shadow-lg";
@@ -100,7 +126,7 @@ const onSubmit = async (e) => {
   const btn = "inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition";
 
   return (
-    <section className="relative ">
+    <section className="relative">
       <div className="relative z-10 max-w-6xl mx-auto px-4">
         <header className="mb-10 text-center">
           <h1 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
@@ -112,7 +138,6 @@ const onSubmit = async (e) => {
         </header>
 
         <div className="grid lg:grid-cols-1 gap-6 items-start">
-          {/* Форма */}
           <div className={`${card} lg:col-span-2 p-6`}>
             <form onSubmit={onSubmit} className="space-y-6 text-white">
               {errors._root && (
@@ -147,23 +172,19 @@ const onSubmit = async (e) => {
                 <label className={label} htmlFor="description">Կարճ նկարագրություն</label>
                 <textarea id="description" className={input} rows={3} name="description" value={form.description} onChange={onChange} placeholder="Ինչ եք վաճառում / ինչ ծառայություն է" />
               </div>
+
               <div>
                 <label className={label} htmlFor="plan">Ընտրեք սակագին</label>
-                <select
-                  id="plan"
-                  className={input}
-                  name="plan"
-                  value={form.plan}
-                  onChange={onChange}
-                  required
-                >
+                <select id="plan" className={input} name="plan" value={form.plan} onChange={onChange} required>
                   <option value="">Ընտրեք</option>
                   <option value="free">Free / Demo</option>
                   <option value="start">Start</option>
                   <option value="pro">Pro (ամենահայտնի)</option>
                   <option value="pro_plus">Pro Plus</option>
                 </select>
+                {errors.plan && <p className="mt-1 text-xs text-red-300">{errors.plan}</p>}
               </div>
+
               {/* Լեզու */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -181,7 +202,7 @@ const onSubmit = async (e) => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className={label} htmlFor="facebookPageUrl">Ձեր Facebook էջի-ի հղումը</label>
-                  <input id="facebookPageUrl" className={input} type="url" name="facebookPageUrl" placeholder="օր․ https://facebook.com/MyBusiness" value={form.facebookPageUrl} onChange={onChange} />
+                <input id="facebookPageUrl" className={input} type="url" name="facebookPageUrl" placeholder="օր․ https://facebook.com/MyBusiness" value={form.facebookPageUrl} onChange={onChange} />
                   {errors.facebookPageUrl && <p className="mt-1 text-xs text-red-300">{errors.facebookPageUrl}</p>}
                 </div>
               </div>
@@ -209,23 +230,6 @@ const onSubmit = async (e) => {
               )}
             </form>
           </div>
-
-          {/* Инструкции */}
-          {/* <div className="space-y-6">
-            <div className={`${card} p-6 text-white`}>
-              <h3 className="text-xl font-semibold mb-3">New Pages Experience</h3>
-              <ol className="list-decimal list-inside space-y-2 text-white/80">
-                <li>Page → <b>Professional dashboard</b> → <b>Page access</b></li>
-                <li><b>Add New</b> → <b>Add a business</b></li>
-                <li>Տվեք մեր <b>Business Manager ID</b></li>
-                <li>Ընտրեք <b>Full control (Admin)</b></li>
-                <li>Հաստատեք հրավերը</li>
-              </ol>
-              <a target="_blank" href="https://www.facebook.com/settings/?tab=profile_access" className={`${btn} mt-4 bg-blue-600 hover:bg-blue-700 text-white`}>
-                Տալ Admin Access (New Pages)
-              </a>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
