@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { mp, track } from '@/lib/mixpanel'; // <-- импорт из ОБЁРТКИ, а не из 'mixpanel-browser'
+import { mp, track } from 'mixpanel-browser';
 
 export default function AnalyticsProvider() {
   const pathname = usePathname();
