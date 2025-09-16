@@ -1,14 +1,16 @@
 'use client';
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { mp, track } from 'mixpanel-browser';
+import { track } from '@/app/lib/mixpanel';
 
 export default function AnalyticsProvider() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  useEffect(() => { mp(); }, []); // init 1 раз
+  // init один раз
+  useEffect(() => { mp(); }, []);
 
+  // отправляем Page View при любом роут-переходе
   useEffect(() => {
     const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
     track('Page View', { url });
