@@ -12,6 +12,8 @@ export function mp() {
       persistence: 'localStorage',
       store_google: true,    // автосохранение UTM: source/medium/campaign/term/content
       save_referrer: true,   // initial_referrer и initial_referring_domain
+            api_host: 'https://api-eu.mixpanel.com',  // ВАЖНО для EU проектов!
+
     });
     inited = true;
   }
