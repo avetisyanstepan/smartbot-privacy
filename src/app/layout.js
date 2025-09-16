@@ -3,6 +3,7 @@ import './globals.css';
 import { Manrope } from 'next/font/google';
 import { metadata as seoMetadata } from './components/seo';
 import Script from 'next/script';
+import AnalyticsProvider from './components/analytics-provider/analytics-provider';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -53,6 +54,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={manrope.className}>
+      <AnalyticsProvider />
+
         {children}
       </body>
     </html>

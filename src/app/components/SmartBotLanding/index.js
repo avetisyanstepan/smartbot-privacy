@@ -18,6 +18,7 @@ import {
   Timer
 } from 'lucide-react';
 import Link from 'next/link';
+import { track } from '@/app/lib/mixpanel';
 
 const manrope = Manrope({ subsets: ['latin'], weight: ['400', '600', '700'] });
 
@@ -61,16 +62,18 @@ export default function SmartBotLanding() {
           Ավտոմատ պատասխաններ 24/7, լիդերի պահպանում և AI-պատասխաններ՝ ձեր բիզնեսի համար։
         </motion.p>
         <div className="mt-6 flex items-center justify-center gap-4">
-      <Link
-        href={{ pathname: "/request-access", query: { variant: "free" } }}
+    <Link
+        href={{ pathname: '/request-access', query: { variant: 'free' } }}
         className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold"
+        onClick={() => track('CTA Click', { cta: 'start_free', variant: 'free', location: 'hero' })}
       >
         Սկսել անվճար
       </Link>
 
       <Link
-        href={{ pathname: "/request-access", query: { variant: "demo" } }}
+        href={{ pathname: '/request-access', query: { variant: 'demo' } }}
         className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-xl font-semibold"
+        onClick={() => track('CTA Click', { cta: 'get_demo', variant: 'demo', location: 'hero' })}
       >
         Ստանալ demo
       </Link>
@@ -313,16 +316,18 @@ export default function SmartBotLanding() {
         {/* <p className="text-lg text-gray-300 mb-2">SmartBot-ը կաշխատի ձեր էջում ընդամենը 1 րոպեում։</p> */}
         <div className="mt-4 flex items-center justify-center gap-4">
               <div className="mt-6 flex items-center justify-center gap-4">
-      <Link
-        href={{ pathname: "/request-access", query: { variant: "free" } }}
+  <Link
+        href={{ pathname: '/request-access', query: { variant: 'free' } }}
         className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold"
+        onClick={() => track('CTA Click', { cta: 'start_free', variant: 'free', location: 'hero' })}
       >
         Սկսել անվճար
       </Link>
 
       <Link
-        href={{ pathname: "/request-access", query: { variant: "demo" } }}
+        href={{ pathname: '/request-access', query: { variant: 'demo' } }}
         className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-xl font-semibold"
+        onClick={() => track('CTA Click', { cta: 'get_demo', variant: 'demo', location: 'hero' })}
       >
         Ստանալ demo
       </Link>
