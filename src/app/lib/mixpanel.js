@@ -8,12 +8,11 @@ export function mp() {
   if (!inited && typeof window !== 'undefined') {
     mixpanel.init(TOKEN, {
       debug: true,
-      track_pageview: false, // pageview шлём сами
+      track_pageview: false,
       persistence: 'localStorage',
-      store_google: true,    // автосохранение UTM: source/medium/campaign/term/content
-      save_referrer: true,   // initial_referrer и initial_referring_domain
-            api_host: 'https://api-eu.mixpanel.com',  // ВАЖНО для EU проектов!
-
+      store_google: true,
+      save_referrer: true,
+      api_host: 'https://api-eu.mixpanel.com', // EU проект
     });
     inited = true;
   }
@@ -25,5 +24,3 @@ export function track(event, props = {}) {
   const pathname = typeof window !== 'undefined' ? window.location.pathname : undefined;
   m.track(event, { pathname, ...props });
 }
-
-export default mixpanel;
