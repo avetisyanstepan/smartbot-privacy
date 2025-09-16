@@ -1,3 +1,4 @@
+// app/request-access/page.js (SERVER)
 import RequestAccess from "../components/RequestAccess";
 
 export default function RequestAccessPage({ searchParams }) {

@@ -3,60 +3,38 @@ import './globals.css';
 import { Manrope } from 'next/font/google';
 import { metadata as seoMetadata } from './components/seo';
 import Script from 'next/script';
-import AnalyticsProvider from './components/analytics-provider/analytics-provider';
+import { Suspense } from 'react';
+import dynamic from 'next/dynamic';
 
-const manrope = Manrope({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-});
+// КЛИЕНТ-ТОЛЬКО: никакого SSR
+const AnalyticsProvider = dynamic(
+  () => import('./components/analytics-provider/analytics-provider'),
+  { ssr: false }
+);
 
+const manrope = Manrope({ subsets: ['latin'], weight: ['400','600','700'] });
 export const metadata = seoMetadata;
+
+// (опционально) полностью отключить SSG для всего приложения
+// export const dynamic = 'force-dynamic';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="hy">
       <head>
-        {/* GA4 */}
-   <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-4REZ50WN7N`}
-          strategy="afterInteractive"
-        />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-4REZ50WN7N" strategy="afterInteractive" />
         <Script id="ga4" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-4REZ50WN7N', { debug_mode: true });
         `}</Script>
-
-        {/* Твой JSON-LD */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "name": "SmartBot",
-              "url": "https://smartbot.am",
-              "applicationCategory": "Chatbot",
-              "operatingSystem": "Web",
-              "offers": {
-                "@type": "Offer",
-                "price": "10000",
-                "priceCurrency": "AMD"
-              },
-              "description": "AI chatbot for Facebook Messenger & Instagram with GPT auto-replies.",
-              "publisher": {
-                "@type": "Organization",
-                "name": "SmartBot"
-              }
-            })
-          }}
-        />
       </head>
       <body className={manrope.className}>
-      <AnalyticsProvider />
-
-        {children}
+        <Suspense fallback={null}>
+          <AnalyticsProvider />
+          {children}
+        </Suspense>
       </body>
     </html>
   );
