@@ -12,7 +12,8 @@ export function mp() {
       persistence: 'localStorage',
       store_google: true,          // initial_utm_* сохранятся
       save_referrer: true,         // initial_referrer сохранится
-      api_host: 'https://api-eu.mixpanel.com', // твой проект в EU
+      api_host: 'https://api-eu.mixpanel.com', 
+      api_transport: 'sendBeacon',// твой проект в EU
     });
     inited = true;
   }
