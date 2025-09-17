@@ -1,22 +1,11 @@
-// app/layout.tsx (или .js)
 import './globals.css';
 import { Manrope } from 'next/font/google';
 import { metadata as seoMetadata } from './components/seo';
 import Script from 'next/script';
-import { Suspense } from 'react';
-import dynamic from 'next/dynamic';
-
-// КЛИЕНТ-ТОЛЬКО: никакого SSR
-const AnalyticsProvider = dynamic(
-  () => import('./components/analytics-provider/analytics-provider'),
-  { ssr: false }
-);
+import AnalyticsProvider from './components/analytics-provider/analytics-provider'; // ← обычный импорт, БЕЗ dynamic
 
 const manrope = Manrope({ subsets: ['latin'], weight: ['400','600','700'] });
 export const metadata = seoMetadata;
-
-// (опционально) полностью отключить SSG для всего приложения
-// export const dynamic = 'force-dynamic';
 
 export default function RootLayout({ children }) {
   return (
@@ -31,10 +20,8 @@ export default function RootLayout({ children }) {
         `}</Script>
       </head>
       <body className={manrope.className}>
-        <Suspense fallback={null}>
-          <AnalyticsProvider />
-          {children}
-        </Suspense>
+        <AnalyticsProvider />
+        {children}
       </body>
     </html>
   );
